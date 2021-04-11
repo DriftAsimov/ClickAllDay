@@ -16,14 +16,18 @@
 
 <body>
 
-    <button onclick = "pong()" type = "button" id = "mov">
-        <p><a id = "clicks">0</a></p>
-    </button>
-
     <audio id = "bgm" controls autoplay preload="auto" hidden>
         <source src = "music.mp3" type = "audio/mpeg">
         Not supported
     </audio>
+
+    <button onclick = "pong()" type = "button" id = "mov">
+        <p><a id = "clicks">0</a></p>
+    </button>
+
+    <div class = "head" id = "head">
+        <h2>Press Left Mouse or 'X' on the button for Magic</h2>
+    </div>
 
     <input id = "slider" type = "range" min = '0' max = '100' value = '50'>
 
