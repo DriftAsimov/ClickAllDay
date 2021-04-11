@@ -60,6 +60,16 @@ h3
   font-family: 'Maven Pro', sans-serif;
 }
 
+.head
+{
+  color: white;
+  font-size: 20px;
+  top: 120px;
+  left: 25%;
+  position: absolute;
+  font-family: 'Maven Pro', sans-serif;
+}
+
 #slider
 {
   -webkit-appearance: none;
