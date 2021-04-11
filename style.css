@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html,
+body 
+{
+  height: 100%;
+  width: 100%;
+  background: #070614;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+}
+
+#mov
+{
+  padding: 40px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  outline: none;
+  width: 300px;
+  display: block;
+  border: 10px solid;
+  box-shadow: 0 0 100px #2f2d7a;
+  --angle: 0deg;
+  border-image: conic-gradient(from var(--angle), #009FFF, #ec2F4B) 1;
+  animation: rotate linear infinite;
+  animation-duration: 50s;
+  font-family: 'Rubik', sans-serif;
+  cursor: url('cursor.png'), auto;
+}
+
+@keyframes rotate
+{
+  to
+  {
+    --angle: 360deg;
+  }
+}
+
+p
+{
+  font-size: 80px;
+}
+
+h3
+{
+  -webkit-text-stroke-color: rgb(248, 248, 248);
+  -webkit-text-stroke-width: 0.2px;
+  color: transparent;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 480px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#slider
+{
+  -webkit-appearance: none;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 13%;
+  box-shadow: 0 0 30px #7574a7;
+  border-radius: 18px;
+  background: url("https://wallpaperaccess.com/full/1853716.jpg");
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+}
+
+#slider:hover
+{
+  opacity: 10;
+}
