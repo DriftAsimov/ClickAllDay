@@ -9,6 +9,8 @@ var dur = document.getElementById('time')
 
 let slider = document.getElementById('slider');
 
+let controls = document.getElementById('head');
+
 window.CSS.registerProperty
 ({
     name: '--angle',
@@ -22,6 +24,7 @@ setInterval(function()
     if (running == false)
     {
         music.pause();
+        setTimeout(function(){controls.style.display = "block";},1500);
     }
 
     if (slider.value < 5)
@@ -41,6 +44,7 @@ box.addEventListener('keyup', event =>
 
 function pong()
 {    
+    controls.style.display = 'none';
 
     music.volume = slider.value / 100;
 
