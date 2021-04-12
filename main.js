@@ -53,10 +53,7 @@ function pong()
     {
         duration = '0' + duration;
     }
-    if (duration > 59)
-    {
-        duration = duration % 60;
-    }
+    
     minutes = Math.floor(duration / 60);
     dur.innerHTML = `${minutes}:${duration}`;
     
