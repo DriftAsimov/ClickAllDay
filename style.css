@@ -56,7 +56,8 @@ h3
   color: transparent;
   font-size: 70px;
   text-align: center;
-  padding-top: 480px;
+  top: 60%;
+  position: relative;
   font-family: 'Maven Pro', sans-serif;
 }
 
@@ -64,10 +65,11 @@ h3
 {
   color: white;
   font-size: 17px;
-  top: 120px;
-  left: 20%;
-  position: absolute;
   font-family: 'Maven Pro', sans-serif;
+  font-size: 3vh;
+  margin-top: 10px;
+  top: 120px;
+  position: relative;
 }
 
 #slider
@@ -75,7 +77,7 @@ h3
   -webkit-appearance: none;
   margin-top: 30px;
   margin-left: 30px;
-  width: 13%;
+  width: 20vh;
   box-shadow: 0 0 30px #7574a7;
   border-radius: 18px;
   background: url("https://wallpaperaccess.com/full/1853716.jpg");
