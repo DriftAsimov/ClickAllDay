@@ -24,7 +24,7 @@ setInterval(function()
     if (running == false)
     {
         music.pause();
-        setTimeout(function(){controls.style.display = "block";},1500);
+        setTimeout(function(){controls.style.visibility = "visible";},1500);
     }
 
     if (slider.value < 5)
@@ -44,7 +44,7 @@ box.addEventListener('keyup', event =>
 
 function pong()
 {    
-    controls.style.display = 'none';
+    controls.style.visibility = "hidden";
 
     music.volume = slider.value / 100;
 
