@@ -48,13 +48,12 @@ function pong()
 
     music.volume = slider.value / 100;
 
-    duration = Math.round(music.currentTime);
+    duration = ~~music.currentTime % 60;
+    minutes = ~~((music.currentTime % 3600) / 60);
     if (duration < 10)
     {
         duration = '0' + duration;
     }
-    
-    minutes = Math.floor(duration / 60);
     dur.innerHTML = `${minutes}:${duration}`;
     
     running = true;
