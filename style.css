@@ -52,7 +52,7 @@ p
 h3
 {
   -webkit-text-stroke-color: rgb(248, 248, 248);
-  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-width: 0.5px;
   color: transparent;
   font-size: 70px;
   text-align: center;
@@ -67,8 +67,7 @@ h3
   font-size: 17px;
   font-family: 'Maven Pro', sans-serif;
   font-size: 3vh;
-  margin-top: 10px;
-  top: 120px;
+  top: 20vh;
   position: relative;
 }
 
@@ -83,6 +82,7 @@ h3
   border-radius: 18px;
   background: url("https://wallpaperaccess.com/full/1853716.jpg");
   outline: none;
+  cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb
