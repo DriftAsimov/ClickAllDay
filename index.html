@@ -16,9 +16,7 @@
 
 <body>
 
-    <audio id = "bgm" controls autoplay preload="auto" hidden loop>
-        <source src = "music.mp3" type = "audio/mpeg">
-        Not supported
+    <audio id = "bgm" controls autoplay preload="auto" hidden loop onerror = "oops()" src = 'music.mp3'>
     </audio>
 
     <center>
@@ -32,6 +30,13 @@
     <input id = "slider" type = "range" min = '0' max = '100' value = '50'>
 
     <h3 id = "time">0:00</h3>
+
+    <center>
+    <div class = "music-upload" id = "music-upload">
+        <button class = "btn" id = "btn">Upload an Audio File</button>
+        <input type = "file" name = "audio" id = "uploaded" onchange = "file(event)" accept=".mp3, .wav, .ogg"/>
+    </div>
+    </center>
 
     <script src='main.js'></script>
 
