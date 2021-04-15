@@ -8,8 +8,10 @@ let box = document.getElementById('mov');
 var dur = document.getElementById('time')
 
 let slider = document.getElementById('slider');
-
 let controls = document.getElementById('head');
+let upload = document.getElementById('uploaded');
+let upload_div = document.getElementById('music-upload');
+let upload_btn = document.getElementById('btn');
 
 window.CSS.registerProperty
 ({
@@ -26,13 +28,31 @@ setInterval(function()
         music.pause();
         setTimeout(function(){controls.style.visibility = "visible";},1500);
     }
-
-    if (slider.value < 5)
-    {
-        slider.innerHTML = "input[type=range]::-webkit-slider-thumb {width:50%;}";
-    }
 }, 300
 );
+
+function file(event)
+{
+    var audio_src = URL.createObjectURL(event.target.files[0]);
+    music.setAttribute('src', audio_src);
+    
+    upload_div.style.boxShadow = '0 0 15px #7574a7';
+    upload_btn.innerHTML = event.target.files[0].name.split(".")[0];
+    time = 0;
+}
+
+function oops()
+{
+    upload_div.style.boxShadow = '0 0 13px #EB1D55';
+}
+
+function bgm()
+{
+    if (running == true)
+    {
+        music.play();
+    }
+}
 
 box.addEventListener('keyup', event =>
 {
@@ -74,8 +94,5 @@ function pong()
         setTimeout(function(){box.style.boxShadow = "";},200);
     }
 
-    if (running == true)
-    {
-        music.play();
-    }
+    bgm();
 }
