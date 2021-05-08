@@ -31,7 +31,6 @@
     </center>  
 
     <input id = "slider" type = "range" min = '0' max = '100' value = '50'>
-    <img src = "share.png" class = "share" id = "share" onclick = "openGui()">
 
     <center>
     <button onclick = "pong()" type = "button" id = "mov" name = "mainButton">
@@ -47,16 +46,6 @@
         <input type = "file" name = "audio" id = "uploaded" onchange = "file(event)" accept=".mp3, .wav, .ogg"/>
     </div>
     </center>
-
-    <div class = "overlay" id = "share-nav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeGui()">&times;</a>
-        <div class = "overlay-content">
-            <a href = "#" id = "copy-link" onclick="copyLink()">Copy Link</a>
-            <span class="tt" id="tip">Copied URL to Clipboard!</span>
-            <a href = "#" onclick="copyPage()">Copy Advancement</a>
-            <div id = "pg"></div>
-        </div>
-    </div>
 
     <script src='main.js'></script>
 
