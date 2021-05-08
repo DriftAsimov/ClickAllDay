@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta property = "og:title" content = "ClickAllDay - The classic clicks got better">
+    <meta property = "og:type" content = "website">
+    <meta property="og:url" content="https://driftasimov.github.io/ClickAllDay/">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/822026003269419028/840522063226601482/flag.png">
+    <meta property="og:description" content="Do you want to break your mouse? Whatever your answer is, you should try some clicks.">
+    <meta name="theme-color" content="#B2EFF7">
+    
+    <title>ClickAllDay</title>
+        
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+    <audio id = "bgm" controls autoplay preload="auto" hidden loop onerror = "oops()" src = 'music.mp3'>
+    </audio>
+
+    <center>
+        <h2 class = 'head' id = 'head'>Unmute your speakers and press 'x' or tap on the button for Magic</h2>
+    </center>  
+
+    <input id = "slider" type = "range" min = '0' max = '100' value = '50'>
+    <img src = "share.png" class = "share" id = "share" onclick = "openGui()">
+
+    <center>
+    <button onclick = "pong()" type = "button" id = "mov" name = "mainButton">
+        <p><a id = "clicks">0</a></p>
+    </button>
+    </center>
+
+    <h3 id = "time">0:00</h3>
+
+    <center>
+    <div class = "music-upload" id = "music-upload">
+        <button class = "btn" id = "btn">Upload an Audio File</button>
+        <input type = "file" name = "audio" id = "uploaded" onchange = "file(event)" accept=".mp3, .wav, .ogg"/>
+    </div>
+    </center>
+
+    <div class = "overlay" id = "share-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeGui()">&times;</a>
+        <div class = "overlay-content">
+            <a href = "#" id = "copy-link" onclick="copyLink()">Copy Link</a>
+            <span class="tt" id="tip">Copied URL to Clipboard!</span>
+            <a href = "#" onclick="copyPage()">Copy Advancement</a>
+            <div id = "pg"></div>
+        </div>
+    </div>
+
+    <script src='main.js'></script>
+
+</body>
+
+</html>
