@@ -13,7 +13,7 @@ let upload = document.getElementById('uploaded');
 let upload_div = document.getElementById('music-upload');
 let upload_btn = document.getElementById('btn');
 
-window.CSS.registerProperty
+document.CSS.registerProperty
 ({
     name: '--angle',
     syntax: '<angle>',
