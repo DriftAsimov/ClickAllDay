@@ -12,3 +12,7 @@
 * Press <kbd> X </kbd> or <kbd> Left Mouse </kbd> on the button
 * Keep doing so to enjoy the song
 * You can even change the song as per your convenience!
+
+# Note
+
+The website is not fully fuctional in Firefox yet, we are working on fixing that.
